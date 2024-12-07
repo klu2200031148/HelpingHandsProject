@@ -62,7 +62,7 @@ public class DonarController {
 	        if (donar != null) {
 	        	 session.setAttribute("user", donar);
 		            model.addAttribute("message", "Login successful!");
-	        	  if (donar.isAdmin()) {
+	        	  if (donar.isAdmin().equalsIgnoreCase("true")) {
 	                  return "adminhome"; // Redirect to admin home page if the user is an admin
 	              } else {
 	                  return "donarhome"; // Redirect to donor home page if the user is not an admin
