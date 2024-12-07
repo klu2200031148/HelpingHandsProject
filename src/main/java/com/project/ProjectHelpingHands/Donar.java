@@ -20,7 +20,7 @@ public class Donar
 	    private String address;
 	    private String donationPreference;
 	    
-	    private boolean isAdmin = false;
+	    private String isAdmin = "false";
 	    
 
 	    private String profileImagePath; // New field to store the image path
@@ -35,11 +35,11 @@ public class Donar
 	    }
 	    
 	    
-	    public boolean isAdmin() {
+	    public String isAdmin() {
 	        return isAdmin;
 	    }
 
-	    public void setAdmin(boolean isAdmin) {
+	    public void setAdmin(String isAdmin) {
 	        this.isAdmin = isAdmin;
 	    }
 	    
