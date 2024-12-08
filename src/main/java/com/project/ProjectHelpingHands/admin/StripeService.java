@@ -46,7 +46,7 @@ public class StripeService {
             SessionCreateParams.builder()
                 .setMode(SessionCreateParams.Mode.PAYMENT)
                 .setSuccessUrl("http://localhost:2005/paymentSuccess")
-                .setCancelUrl(""http://localhost:2005/cancel")
+                .setCancelUrl("http://localhost:2005/cancel")
                 .addLineItem(lineItem)
                 .build();
 
